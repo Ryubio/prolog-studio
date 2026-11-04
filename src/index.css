@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0a0d14;
+  --bg-panel: #101522;
+  --bg-card: #161d30;
+  --bg-hover: #1d263f;
+  --border-color: #232d4a;
+  --accent-color: #6366f1;
+  --accent-hover: #4f46e5;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --color-variable: #fbbf24;
+  --color-atom: #38bdf8;
+  --color-predicate: #a78bfa;
+  --color-string: #34d399;
+  --color-operator: #f43f5e;
+  --color-comment: #64748b;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow: hidden;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Custom Sleek Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-panel);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* Prolog Syntax Highlighting Tokens using CSS variables */
+.pl-comment {
+  color: var(--color-comment);
+  font-style: italic;
+}
+
+.pl-directive {
+  color: var(--color-predicate);
+  font-weight: 600;
+}
+
+.pl-operator {
+  color: var(--color-operator);
+  font-weight: 600;
+}
+
+.pl-variable {
+  color: var(--color-variable);
+  font-weight: 500;
+}
+
+.pl-atom {
+  color: var(--color-atom);
+}
+
+.pl-string {
+  color: var(--color-string);
+}
+
+.pl-number {
+  color: var(--color-operator);
+}
+
+.pl-builtin {
+  color: var(--accent-color);
+  font-weight: 500;
+}

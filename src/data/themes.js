@@ -1,0 +1,172 @@
+export const PRESET_THEMES = [
+  {
+    id: 'obsidian_indigo',
+    name: 'Obsidian Indigo',
+    category: 'Koyu Tema',
+    previewColor: '#6366f1',
+    bgPreview: '#0a0d14',
+    values: {
+      bgPrimary: '#0a0d14',
+      bgPanel: '#101522',
+      bgCard: '#161d30',
+      bgHover: '#1d263f',
+      borderColor: '#232d4a',
+      accentColor: '#6366f1',
+      accentHover: '#4f46e5',
+      textMain: '#f1f5f9',
+      textMuted: '#94a3b8',
+      colorVariable: '#fbbf24',
+      colorAtom: '#38bdf8',
+      colorPredicate: '#a78bfa',
+      colorString: '#34d399',
+      colorOperator: '#f43f5e',
+      colorComment: '#64748b'
+    }
+  },
+  {
+    id: 'cyberpunk_neon',
+    name: 'Cyberpunk Neon',
+    category: 'Koyu Tema',
+    previewColor: '#06b6d4',
+    bgPreview: '#0c0f17',
+    values: {
+      bgPrimary: '#0c0f17',
+      bgPanel: '#141824',
+      bgCard: '#1a2033',
+      bgHover: '#232b45',
+      borderColor: '#2f395b',
+      accentColor: '#06b6d4',
+      accentHover: '#0891b2',
+      textMain: '#f8fafc',
+      textMuted: '#94a3b8',
+      colorVariable: '#f43f5e',
+      colorAtom: '#22d3ee',
+      colorPredicate: '#ec4899',
+      colorString: '#10b981',
+      colorOperator: '#facc15',
+      colorComment: '#64748b'
+    }
+  },
+  {
+    id: 'emerald_matrix',
+    name: 'Zümrüt Yeşili (Emerald)',
+    category: 'Koyu Tema',
+    previewColor: '#10b981',
+    bgPreview: '#08120e',
+    values: {
+      bgPrimary: '#08120e',
+      bgPanel: '#0e1d17',
+      bgCard: '#142921',
+      bgHover: '#1b382d',
+      borderColor: '#234739',
+      accentColor: '#10b981',
+      accentHover: '#059669',
+      textMain: '#f0fdf4',
+      textMuted: '#86efac',
+      colorVariable: '#fde047',
+      colorAtom: '#34d399',
+      colorPredicate: '#2dd4bf',
+      colorString: '#6ee7b7',
+      colorOperator: '#f87171',
+      colorComment: '#4b7c65'
+    }
+  },
+  {
+    id: 'dracula_purple',
+    name: 'Dracula Moru',
+    category: 'Koyu Tema',
+    previewColor: '#bd93f9',
+    bgPreview: '#161424',
+    values: {
+      bgPrimary: '#161424',
+      bgPanel: '#1e1b30',
+      bgCard: '#27233f',
+      bgHover: '#332e52',
+      borderColor: '#433c6b',
+      accentColor: '#a855f7',
+      accentHover: '#9333ea',
+      textMain: '#f8fafc',
+      textMuted: '#cbd5e1',
+      colorVariable: '#ffb86c',
+      colorAtom: '#8be9fd',
+      colorPredicate: '#ff79c6',
+      colorString: '#50fa7b',
+      colorOperator: '#ff5555',
+      colorComment: '#6272a4'
+    }
+  },
+  {
+    id: 'nordic_frost',
+    name: 'Nordic Frost (Buzul)',
+    category: 'Koyu Tema',
+    previewColor: '#38bdf8',
+    bgPreview: '#0f172a',
+    values: {
+      bgPrimary: '#0f172a',
+      bgPanel: '#1e293b',
+      bgCard: '#293548',
+      bgHover: '#334155',
+      borderColor: '#3e4e66',
+      accentColor: '#38bdf8',
+      accentHover: '#0284c7',
+      textMain: '#f8fafc',
+      textMuted: '#94a3b8',
+      colorVariable: '#fbbf24',
+      colorAtom: '#7dd3fc',
+      colorPredicate: '#c084fc',
+      colorString: '#a7f3d0',
+      colorOperator: '#f43f5e',
+      colorComment: '#64748b'
+    }
+  },
+  {
+    id: 'amber_sunset',
+    name: 'Amber & Altın (Sunset)',
+    category: 'Koyu Tema',
+    previewColor: '#f59e0b',
+    bgPreview: '#14100c',
+    values: {
+      bgPrimary: '#14100c',
+      bgPanel: '#1f1913',
+      bgCard: '#2a221a',
+      bgHover: '#382e23',
+      borderColor: '#4a3d2e',
+      accentColor: '#f59e0b',
+      accentHover: '#d97706',
+      textMain: '#fef3c7',
+      textMuted: '#d97706',
+      colorVariable: '#fb923c',
+      colorAtom: '#38bdf8',
+      colorPredicate: '#e879f9',
+      colorString: '#34d399',
+      colorOperator: '#ef4444',
+      colorComment: '#785f46'
+    }
+  },
+  {
+    id: 'clean_light',
+    name: 'Clean Light (Açık Tema)',
+    category: 'Açık Tema',
+    previewColor: '#4f46e5',
+    bgPreview: '#f8fafc',
+    values: {
+      bgPrimary: '#f8fafc',
+      bgPanel: '#ffffff',
+      bgCard: '#f1f5f9',
+      bgHover: '#e2e8f0',
+      borderColor: '#cbd5e1',
+      accentColor: '#4f46e5',
+      accentHover: '#4338ca',
+      textMain: '#0f172a',
+      textMuted: '#64748b',
+      colorVariable: '#b45309',
+      colorAtom: '#0284c7',
+      colorPredicate: '#7c3aed',
+      colorString: '#059669',
+      colorOperator: '#e11d48',
+      colorComment: '#94a3b8'
+    }
+  }
+];
+
+export const DEFAULT_THEME = PRESET_THEMES[0];
