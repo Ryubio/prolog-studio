@@ -246,7 +246,7 @@ class PrologService {
 
       for (let i = 0; i < limit; i++) {
         const step = q.next();
-        if (!step || step.done) {
+        if (!step) {
           hasMore = false;
           break;
         }
@@ -266,11 +266,14 @@ class PrologService {
           };
         }
 
-        const formatted = this.formatBindings(step.value);
-        if (formatted) {
-          solutions.push(formatted);
-        } else {
-          // Failure with no bindings
+        if (step.value) {
+          const formatted = this.formatBindings(step.value);
+          if (formatted) {
+            solutions.push(formatted);
+          }
+        }
+
+        if (step.done) {
           hasMore = false;
           break;
         }
@@ -323,7 +326,7 @@ class PrologService {
     try {
       for (let i = 0; i < count; i++) {
         const step = this.activeQuery.next();
-        if (!step || step.done) {
+        if (!step) {
           hasMore = false;
           break;
         }
@@ -338,10 +341,14 @@ class PrologService {
           };
         }
 
-        const formatted = this.formatBindings(step.value);
-        if (formatted) {
-          solutions.push(formatted);
-        } else {
+        if (step.value) {
+          const formatted = this.formatBindings(step.value);
+          if (formatted) {
+            solutions.push(formatted);
+          }
+        }
+
+        if (step.done) {
           hasMore = false;
           break;
         }
@@ -387,7 +394,7 @@ class PrologService {
     try {
       while (solutions.length < maxLimit) {
         const step = this.activeQuery.next();
-        if (!step || step.done) {
+        if (!step) {
           break;
         }
 
@@ -395,10 +402,14 @@ class PrologService {
           break;
         }
 
-        const formatted = this.formatBindings(step.value);
-        if (formatted) {
-          solutions.push(formatted);
-        } else {
+        if (step.value) {
+          const formatted = this.formatBindings(step.value);
+          if (formatted) {
+            solutions.push(formatted);
+          }
+        }
+
+        if (step.done) {
           break;
         }
       }
